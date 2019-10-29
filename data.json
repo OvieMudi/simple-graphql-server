@@ -1,0 +1,46 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "name": "Anakin Skywalker",
+      "email": "Skyguy@gmail.com",
+      "age": 36
+    },
+    {
+      "id": "2",
+      "name": "Luke Skywalker",
+      "email": "Marcos@gmail.com",
+      "age": 19
+    },
+    {
+      "id": "3",
+      "name": "Leia Skywalker",
+      "email": "princess@gmail.com",
+      "age": 23
+    },
+    {
+      "id": "4",
+      "name": "Hondo Onaka",
+      "email": "hondo@gmail.com",
+      "age": 63
+    },
+    {
+      "id": "5",
+      "name": "Cad Bane",
+      "email": "cbane@gmail.com",
+      "age": 72
+    },
+    {
+      "id": "6",
+      "name": "Asajj Ventres",
+      "email": "baldwitch@gmail.com",
+      "age": 28
+    },
+    {
+      "name": "Ahsoka Tano",
+      "email": "thepadaw@gmail.com",
+      "age": 17,
+      "id": "aqZl-Ui"
+    }
+  ]
+}
