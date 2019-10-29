@@ -1,5 +1,5 @@
 {
-  "name": "customerbase",
+  "name": "characterbase",
   "version": "1.0.0",
   "description": "Simple GraphQL server",
   "main": "server.js",

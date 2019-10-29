@@ -1,5 +1,5 @@
 {
-  "customers": [
+  "characters": [
     {
       "id": "1",
       "name": "Anakin Skywalker",
@@ -33,7 +33,7 @@
     {
       "id": "6",
       "name": "Asajj Ventres",
-      "email": "baldwitch@gmail.com",
+      "email": "thebaldwitch@gmail.com",
       "age": 28
     },
     {
@@ -41,6 +41,12 @@
       "email": "thepadaw@gmail.com",
       "age": 17,
       "id": "aqZl-Ui"
+    },
+    {
+      "name": "Ben Skywalker",
+      "email": "ben@gmail.com",
+      "age": 7,
+      "id": "vQJSlV7"
     }
   ]
 }

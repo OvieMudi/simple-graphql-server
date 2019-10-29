@@ -7,8 +7,8 @@ const {
   GraphQLSchema
 } = require('graphql');
 
-const CustomerType = new GraphQLObjectType({
-  name: 'Customer',
+const CharacterType = new GraphQLObjectType({
+  name: 'Character',
   fields: () => ({
     id: { type: GraphQLString },
     name: { type: GraphQLString },
@@ -17,7 +17,7 @@ const CustomerType = new GraphQLObjectType({
   })
 });
 
-const customers = [
+const characters = [
   { id: '1', name: 'Anakin Skywalker', email: 'skyguy@gmail.com', age: 39 },
   { id: '2', name: 'Luke Skywalker', email: 'Marcod@gmail.com', age: 18 },
   { id: '3', name: 'Leia Organa', email: 'princess@gmail.com', age: 18 }
@@ -26,23 +26,23 @@ const customers = [
 const RootQuery = new GraphQLObjectType({
   name: 'RootQueryType',
   fields: {
-    customer: {
-      type: CustomerType,
+    character: {
+      type: CharacterType,
       args: {
         id: {
           type: GraphQLString
         }
       },
       resolve(parentValue, args) {
-        for (let i = 0; i < customers.length; i++) {
-          if (customers[i].id === args.id) return customers[i];
+        for (let i = 0; i < characters.length; i++) {
+          if (characters[i].id === args.id) return characters[i];
         }
       }
     },
-    customers: {
-      type: GraphQLList(CustomerType),
+    characters: {
+      type: GraphQLList(CharacterType),
       resolve() {
-        return customers;
+        return characters;
       }
     }
   }
